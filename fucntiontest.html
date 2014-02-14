@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- Geoff Boss/2014 -->
+<html>
+<head>
+	<title>Crypto Knowledge</title>
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Geoff Boss">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">    
+    <link rel="shortcut icon" href="assets/css/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/testStyle.css">
+    <script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/functiontest.js"></script>  
+   
+</head>
+
+<body>
+<div class="container">
+	<div id="title" data-toggle="modal" data-target="#titleModal">
+		<h1>Crypt(o) Walk</h1>
+ 	</div>	
+	<div class="row">
+<!-- Bitcoin Display -->
+		<div class="col-xs-12 col-md-4"> 
+			<div id="bitcoin" class="coins" data-toggle="modal" data-target="#myModal">
+				<div class ="bitcoin">
+					<div class="box3d pic1">
+						<img src="assets/css/btc-reverse.png" class="img-responsive">
+				    	&nbsp;
+					</div>
+					<div class="box3d pic2">
+						<img src="assets/css/btc-main.png" class="img-responsive">
+
+				   		&nbsp;
+					</div>
+				</div>
+			</div>	
+ 		</div>	
+<!-- DogeCoin Display -->
+		<div class="col-xs-12 col-md-4" > 
+			<div id="dogecoin" class="coins" data-toggle="modal" data-target="#myModal">
+				<div class ="dogecoin">
+					<div class="box3d pic3">
+						<img src="assets/css/doge-reverse.png" class="img-responsive">
+					    &nbsp;
+					</div>
+					<div class="box3d pic4">
+						<img src="assets/css/doge-main.png" class="img-responsive">
+					    &nbsp;
+					</div>
+				</div>	
+			</div>		
+		</div>
+<!-- LiteCoin Display -->
+		<div class="col-xs-12 col-md-4" > 
+			<div id="litecoin" class="coins" data-toggle="modal" data-target="#myModal">
+				<div class ="litecoin">
+					<div class="box3d pic5">
+						<img src="assets/css/ltc-reverse.png" class="img-responsive">
+					    &nbsp;
+					</div>
+					<div class="box3d pic6">
+						<img src="assets/css/ltc-main.png" class="img-responsive">
+					    &nbsp;
+					</div>
+				</div>	
+			</div>		
+		</div>	
+ 	</div>	
+	
+<!-- Modal Functionality For Coins -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      <div class="modal-body">
+      	<div id="video"></div>
+      	<a href="" id="info-links"></a>
+      </div>
+      <div class="modal-footer">
+      	<!-- News Buttons -->
+      	<button id="btcNews" class="news" data-coin-name="bitcoin" type="button-left"  class="btn btn-primary" data-toggle="modal" data-target="#devModal" data-dismiss="modal" class="">BTC News</button>
+      	
+        <button id="dogeNews" class="news" data-coin-name="dogecoin" type="button-left" class="btn btn-primary" data-toggle="modal" data-target="#devModal" data-dismiss="modal" class="">Doge News</button>
+      	
+        <button id="ltcNews" class="news" data-coin-name="litecoin" type="button-left" class="btn btn-primary" data-toggle="modal" data-target="#devModal" data-dismiss="modal" class="">LTC News</button>
+
+
+      	<!-- Developer Buttons -->
+        <button id="btcForDevs" class="repos" data-dev="bitcoin" type="button-left" class="btn btn-primary" data-toggle="modal" data-target="#devModal" data-dismiss="modal" class="">BTC For Developers </button>
+
+        <button id="dogeForDevs" class="repos" data-dev="dogecoin" type="button-left" class="btn btn-primary" data-toggle="modal" data-target="#devModal" data-dismiss="modal" class=""> Doge For Developers </button>
+
+        <button id="ltcForDevs" class="repos" data-dev="litecoin" type="button-left" class="btn btn-primary" data-toggle="modal" data-target="#devModal" data-dismiss="modal" class="">LTC For Developers </button>
+        <button id="btnClose" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal For Developers -->
+<div class="modal fade" id="devModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+      		<div class="modal-header">
+      			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        		<h4 class="modal-title" id="myModalLabel"></h4>
+      		</div>
+      		<div class="modal-body">
+      		</div>
+      		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      		</div>
+    	</div>
+	</div>
+</div>   	
+
+<!-- Modal For News -->
+<div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+      		<div class="modal-header">
+      			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        		<h4 class="modal-title" id="myModalLabel"></h4>
+      		</div>
+      		<div class="modal-body">
+      		</div>
+      		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      		</div>
+    	</div>
+	</div>
+</div>   	
+
+<!-- Modal For Title -->
+<div class="modal fade" id="titleModal" tabindex="-1" role="dialog" data-trigger="hover" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+      		<div class="modal-header">
+      			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        		<h4 class="modal-title" id="myModalLabel"></h4>
+      		</div>
+      		<div class="modal-body">
+      			<p>Crypt(o) Walk is a place that was built to service the needs of those interested in learning more about cryptocurrencies. Cryptocurrencies are peer-to-peer Internet currencies that enable instant payments to anyone in the world, with no middle man (ie a Bank). Cryptocurrnecies are usually obtained through mining, but thanks to the community there have been many creations, like marketplaces, that allow the average internet user to get their hands on an Internet currency by simply making a purchase online.</p> 
+      			<p>For those looking to get started there is one very important first step. You must get a wallet! Wallets are exaclty what they sound like, but in computer form. There are two types of wallets. Desktop wallets that come as downloadable programs to install on your machine, or online wallets hosted and secured by the wallet provider. Each coin below will have links to set one up.</p>
+      			<p>Currently we feature three of the most prevalant, promising cryptocurrencies, Bitcoin, Dogecoin and Litecoin. The current buy price shown for each is a reflection of 1 USD to 1 of the selected currency.</p>
+      			<p>If you have questions feel free to send an email, or ask the forums.</p>
+      		</div>
+      		<div class="modal-footer">
+        		<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      		</div>
+    	</div>
+	</div>
+</div>   
+
+<!-- Footer -->
+<div class="row">
+	<footer class="footer">
+		<div class="col-sm-4">
+<!-- 			<h6 class="">Tip:1EHffeoFWvBtr9RKj3vBV9zRZXMJWCB67u</h6>
+ -->		</div>	
+	</footer>
+</div>
+
+
+
+<!-- Bootstrap JS -->	
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	
+
+</body>
+</html>
